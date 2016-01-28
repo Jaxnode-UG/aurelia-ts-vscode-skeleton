@@ -1,0 +1,12 @@
+[
+    {
+        "route": ["","contacts"],
+        "moduleId": "contacts/contacts-listing",
+        "title": "Contacts Listing"
+    },
+    {
+        "route": "edit-contact/:id",
+        "moduleId": "contacts/edit-contact",
+        "title": "Edit Contact"
+    }
+]

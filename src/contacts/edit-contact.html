@@ -1,0 +1,44 @@
+<template>
+    <h1>Edit Contact</h1>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src.bind="contact.picture.large" class="img-rounded">
+                <div class="caption">
+                    <h3>${contact.name.first} ${contact.name.last}</h3>
+                    <h4>${contact.email}
+                </div>
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="inpFirstName">First Name</label>
+            <input type="text" id="inFirstName" class="form-control" value.bind="contact.name.first">
+        </div>
+        <div class="form-group">
+            <label for="inpLastName">Last Name</label>
+            <input type="text" id="inpLastName" class="form-control" value.bind="contact.name.last">
+        </div>
+        <div class="form-group">
+            <label for="inpStreet">Street</label>
+            <input type="text" id="inpStreet" class="form-control" value.bind="contact.location.street">
+        </div>
+        <div class="form-group">
+            <label for="inpCity">City</label>
+            <input type="text" id="inpCity" class="form-control" value.bind="contact.location.city">
+        </div>
+        <div class="form-group">
+            <label for="inpState">State</label>
+            <input type="text" id="inpState" class="form-control" value.bind="contact.location.state">
+        </div>
+        <div class="form-group">
+            <label for="inpZip">Zip</label>
+            <input type="text" id="inpZip" class="form-control" value.bind="contact.location.zip">
+        </div>
+        <div class="form-group">
+            <label for="inpEmail">Email</label>
+            <input type="text" id="inpEmail" class="form-control" value.bind="contact.email">
+        </div>
+    </form>
+</template>
