@@ -5,7 +5,7 @@
         "title": "Contacts Listing"
     },
     {
-        "route": "edit-contact/:id",
+        "route": "edit-contact/:name",
         "moduleId": "contacts/edit-contact",
         "title": "Edit Contact"
     }

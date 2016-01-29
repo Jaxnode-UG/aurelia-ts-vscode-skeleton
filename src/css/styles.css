@@ -1,0 +1,11 @@
+.navbar .navbar-collapse, .navbar .navbar-form {
+    box-shadow: 2px 2px 20px 3px #333;
+}
+
+.thumbnail{
+    box-shadow: 11px 9px 14px 2px #999;
+}
+
+.page-host{
+    margin-top: 65px;
+}

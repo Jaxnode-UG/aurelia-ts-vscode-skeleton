@@ -1,15 +1,12 @@
 <template>
+    <require from="../components/contact-display.html"></require>
     <h1>Edit Contact</h1>
     <div class="row">
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src.bind="contact.picture.large" class="img-rounded">
-                <div class="caption">
-                    <h3>${contact.name.first} ${contact.name.last}</h3>
-                    <h4>${contact.email}
-                </div>
-            </div>
-        </div>
+        <contact-display contact.bind="contact">
+            <template replace-part="contact-name">
+                ${contact.name.first} ${contact.name.last}
+            </template>
+        </contact-display>
     </div>
     <form>
         <div class="form-group">

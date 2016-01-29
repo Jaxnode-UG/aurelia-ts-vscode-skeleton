@@ -11,14 +11,12 @@ export class EditContact {
 
     activate(params) {
         //fired when the page is loaded
+        console.log(params);
         let contactId = params.id;
         this.httpClient.get(`https://randomuser.me/api/`)
-            .then((data: any) => {
+            .then((data) => {
                 this.contact = JSON.parse(data.response).results[0].user;
                 console.log(this.contact);
-            })
-            .catch((err) => {
-                console.log(err);
             });
     }
 

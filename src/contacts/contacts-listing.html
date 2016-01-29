@@ -1,0 +1,7 @@
+<template>
+    <require from="../components/contact-display.html"></require>
+    <h1>All Contact</h1>
+    <div class="row">
+        <contact-display contact.bind="contact" repeat.for="contact of contacts"></contact-display>
+    </div>
+</template>

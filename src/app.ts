@@ -1,19 +1,12 @@
 import {Router, RouterConfiguration} from "aurelia-router";
+import * as route from "config/routes.json!json";
 
 export class App {
     router: Router;
 
     configureRouter(config: RouterConfiguration, router: Router) {
         config.title = "Aurelia Demo";
-        config.map([
-            {
-                route: ["", "home"],
-                moduleId: "home",
-                name: "home",
-                title: "Home",
-                nav: true
-            }
-        ]);
+        config.map(route);
         
         this.router = router;
 

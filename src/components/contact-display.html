@@ -1,0 +1,15 @@
+<template bindable="contact">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img if.bind="contact" src.bind="contact.picture.medium" class="img-circle">
+            <div class="caption">
+                <h3>
+                    <template replaceable part="contact-name">
+                    <a href="#/edit-contact/${contact.name.first}">${contact.name.first} ${contact.name.last}</a>
+                    </template>
+                </h3>
+                <h4>${contact.email}</h4>
+            </div>
+        </div>
+    </div>
+</template>
