@@ -5,24 +5,12 @@ This is the a simple skeleton project for Aurelia framework using typescript in 
 
 ## Steps
 
-<code>
+````
     $ dnu restore
-</code>
-<code>
     $ dnu build
-</code>
-<code>
     $ npm install
-</code>
-<code>    
     $ jspm install -y
-</code>
-<code>    
     $ tsd install
-</code>
-<code>    
     $ gulp build-system build-html build-css build-json
-</code>
-<code>    
     $ dnx web
-</code>
+````
